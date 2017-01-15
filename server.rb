@@ -2,6 +2,10 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 require 'csv'
+
+get '/' do
+  haml :home
+end
  
 # Handle GET-request (Show the upload form)
 get "/upload" do
